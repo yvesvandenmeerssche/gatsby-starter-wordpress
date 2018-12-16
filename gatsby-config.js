@@ -25,7 +25,7 @@ module.exports = {
         perPage: 100,
         // Search and Replace Urls across WordPress content.
         searchAndReplaceContentUrls: {
-          sourceUrl: "https://surfbnb.tv/jamstack/",
+          sourceUrl: "wpdemo.gatsbycentral.com",
           replacementUrl: "https://jamstacklivethelifetv.netlify.com",
         },
         // Set how many simultaneous requests are sent at once.
