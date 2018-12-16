@@ -16,7 +16,11 @@ module.exports = {
         protocol: 'https',
         // Use 'Advanced Custom Fields' Wordpress plugin
         useACF: false,
-        auth: {},
+        auth: {
+        htaccess_user: "jamstack",
+          htaccess_pass: "#80Bm%roSb",
+          htaccess_sendImmediately: false,
+        },
         // Set to true to debug endpoints on 'gatsby build'
         verboseOutput: false,
       },
