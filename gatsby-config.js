@@ -57,7 +57,6 @@ module.exports = {
         // Set to true to debug endpoints on 'gatsby build'
         verboseOutput: false,
       },
-    },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     'gatsby-plugin-purgecss',
