@@ -14,12 +14,6 @@ module.exports = {
         hostingWPCOM: false,
         // The protocol. This can be http or https.
         protocol: 'https',
-        // Use 'Advanced Custom Fields' Wordpress plugin
-        useACF: false,
-        auth: {
-        htaccess_user: "jamstack",
-          htaccess_pass: "#80Bm%roSb",
-          htaccess_sendImmediately: false,
         // plugin, you can specify user and password to obtain access token and use authenticated requests against wordpress REST API.
           jwt_user: process.env.JWT_USER,
           jwt_pass: process.env.JWT_PASSWORD,
