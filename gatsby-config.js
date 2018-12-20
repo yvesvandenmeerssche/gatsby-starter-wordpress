@@ -25,8 +25,8 @@ module.exports = {
         perPage: 100,
         // Search and Replace Urls across WordPress content.
         searchAndReplaceContentUrls: {
-          sourceUrl: "wpdemo.gatsbycentral.com",
-          replacementUrl: "https://jamstacklivethelifetv.netlify.com",
+          sourceUrl: "headlesswp.netlify.com",
+          replacementUrl: "https://headlesswp.netlify.com/",
         },
         // Set how many simultaneous requests are sent at once.
         concurrentRequests: 10,
