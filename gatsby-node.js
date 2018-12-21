@@ -177,7 +177,7 @@ exports.createPages = ({ actions, graphql }) => {
     .then(() => {
       return graphql(`
         {
-          allWordpressWpUsers {
+          allWordpressWpStatuses {
             edges {
               node {
                 id
