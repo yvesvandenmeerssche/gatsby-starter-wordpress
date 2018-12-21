@@ -33,11 +33,7 @@ exports.createPages = ({ actions, graphql }) => {
       // excludes drafts, future posts, etc. They will appear in development,
       // but not in a production build.
 
-      const allPages = result.data.allWordpressPage.edges
-      const pages =
-        process.env.NODE_ENV === 'production'
-          ? getOnlyPublished(allPages)
-          : allPages
+     
 
       // Call `createPage()` once per WordPress page
       _.each(pages, ({ node: page }) => {
