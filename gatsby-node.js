@@ -177,7 +177,7 @@ exports.createPages = ({ actions, graphql }) => {
     .then(() => {
       return graphql(`
         {
-          allWordpressWpUsers {
+          allWordpressAcfUsers {
             edges {
               node {
                 id
@@ -196,7 +196,7 @@ exports.createPages = ({ actions, graphql }) => {
 
       const authorTemplate = path.resolve(`./src/templates/author.js`)
 
-      _.each(result.data.allWordpressWpUsers.edges, ({ node: author }) => {
+      _.each(result.data.allWordpressAcfUsers.edges, ({ node: author }) => {
         createPage({
           path: `/author/${author.slug}`,
           component: authorTemplate,
