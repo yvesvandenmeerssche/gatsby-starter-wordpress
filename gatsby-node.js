@@ -181,7 +181,6 @@ exports.createPages = ({ actions, graphql }) => {
             edges {
               node {
                 id
-                slug
               }
             }
           }
@@ -198,7 +197,7 @@ exports.createPages = ({ actions, graphql }) => {
 
       _.each(result.data.allWordpressAcfUsers.edges, ({ node: author }) => {
         createPage({
-          path: `/author/${author.slug}`,
+          path: `/author/${author}`,
           component: authorTemplate,
           context: {
             id: author.id,
