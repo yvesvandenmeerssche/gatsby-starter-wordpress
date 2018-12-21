@@ -3,8 +3,7 @@ const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 const { paginate } = require('gatsby-awesome-pagination')
 
-const getOnlyPublished = edges =>
-  _.filter(edges, ({ node }) => node.status === 'publish')
+const DEPLOY_ENV  = process.env.DEPLOY_ENV || 'lbn_published_production';
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
